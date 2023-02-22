@@ -15,5 +15,9 @@ if len(numbers) % 2 == 0:
 else:
     print(numbers[len(numbers) // 2])
 
+print(statistics.median_high(numbers))
+print(statistics.median_low(numbers))
+
+# mode
 print(statistics.mode(numbers))
 print(max(set(numbers), key=numbers.count))
