@@ -15,5 +15,5 @@ if len(numbers) % 2 == 0:
 else:
     print(numbers[len(numbers) // 2])
 
-
 print(statistics.mode(numbers))
+print(max(set(numbers), key=numbers.count))
