@@ -23,6 +23,10 @@ def simple_stats():
     print(statistics.mode(numbers))
     print(max(set(numbers), key=numbers.count))
 
+    # deviation both should return same values
+    print(statistics.stdev(numbers))
+    print(math.sqrt(statistics.variance(numbers)))
+
 def main():
     simple_stats()
 
