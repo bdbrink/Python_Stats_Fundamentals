@@ -1,9 +1,7 @@
 import math
 import statistics
 
-numbers = [10, 10, 10, 5000, 20, 30, 40, 50, 60, 70, 80, 90, 1000, 1000]
-
-def simple_stats():
+def simple_stats(numbers):
     # mean
     print(sum(numbers) / len(numbers))
     print(statistics.mean(numbers))
@@ -28,7 +26,8 @@ def simple_stats():
     print(math.sqrt(statistics.variance(numbers)))
 
 def main():
-    simple_stats()
+    numbers = [10, 10, 10, 5000, 20, 30, 40, 50, 60, 70, 80, 90, 1000, 1000]
+    simple_stats(numbers)
 
 if __name__ == "__main__":
     main()
